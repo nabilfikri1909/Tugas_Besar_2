@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    color: #2c3e50;
+    overflow-x: hidden;
+}
+
+/* Transisi Perpindahan Halaman (Slide & Fade) */
+.route-enter-active,
+.route-leave-active {
+    transition: all 0.4s ease-out;
+}
+.route-enter-from {
+    opacity: 0;
+    transform: translateX(30px);
+}
+.route-leave-to {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+/* Desain Kartu Global */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.img-cover {
+    height: 250px;
+    object-fit: cover;
+}
